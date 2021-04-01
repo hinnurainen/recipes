@@ -1,22 +1,19 @@
+import React from "react";
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import './App.css';
 
-function App() {
+import Header from "./Components/Header";
+import Main from "./Components/Main";
+import Footer from "./Components/Footer";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello world!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Main />
+      <Footer />
+    </Router>
   );
 }
 
