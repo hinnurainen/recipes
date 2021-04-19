@@ -1,0 +1,28 @@
+{
+    "recipes": [
+        {
+            "id" : 1,
+            "snackname" : "Smoothie Bowl",
+            "image" : "https://source.unsplash.com/Cu8CboeSqio/1600x900",
+            "ingredients" : "quark banana blueberries strawberries kiwi coconut flakes dark chocholate",
+            "instructions" : "Make a smoothie. Pour it into a bowl. Decorate it."
+            
+        },
+        {
+            "id" : 2,
+            "snackname" : "Chia Pudding",
+            "image" : "https://source.unsplash.com/Jwz8ZMxhoSs/1600x900",
+            "ingredients" : "chia liquid",
+            "instructions" : "Prepare it a few hours beforehand. Mix chia and liquid and put it into a fridge."
+            
+        },
+        {
+            "id" : 3,
+            "snackname" : "Protein Fluff",
+            "image" : "https://source.unsplash.com/C05u9Xh37to/1600x900",
+            "ingredients" : "protein stuff frozen strawberries water",
+            "instructions" : "Melt strawberries a little bit and then mix everything together for a while with a sauvasekoitin."
+            
+        }
+    ]
+}

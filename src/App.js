@@ -7,11 +7,12 @@ import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 
+
 const App = () => {
   return (
     <Router>
       <Header />
-      <Main />
+      <Main recipes={this.state.recipes} />
       <Footer />
     </Router>
   );
