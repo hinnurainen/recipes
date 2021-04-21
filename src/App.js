@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <Main recipes={this.state.recipes} />
+      <Main />
       <Footer />
     </Router>
   );
