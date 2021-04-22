@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import RecipeCard from './RecipeCard';
 
+import './Recipes.css';
+
 
 class Recipes extends Component {
 
     state = {
         recipes: [],
-        isLoading: false,
         searchInput: "",
     };
 
     SearchBox = (props) => {
         return (
             <div>
-                <input type="text" onChange={props.search} placeholder="What to prepare..." />
+                <input type="text" onChange={props.search} placeholder="Snack time?" />
             </div>
         );
     };
@@ -23,14 +24,18 @@ class Recipes extends Component {
     }
 
     componentDidMount() {
-        this.setState({ isLoading: true });
-        fetch('http://localhost:3001/recipes')
+        fetch("http://localhost:3001/recipes")
             .then(resp => resp.json())
             .then((data) => this.setState({ recipes: data }));
     };
 
     render() {
-        const recipesList = this.state.recipes.map((recipe) => { return (<RecipeCard snackname={recipe.snackname} key={recipe.id} image={recipe.image} ingredients={recipe.ingredients} instructions={recipe.instructions} />) })
+        const recipeFilter = this.state.recipes.filter(
+            recipe => {
+                return recipe.snackname.toLocaleLowerCase().includes(this.state.searchInput.toLocaleLowerCase());
+            }
+        );
+        const recipesList = recipeFilter.map((recipe) => { return (<RecipeCard snackname={recipe.snackname} key={recipe.id} image={recipe.image} ingredients={recipe.ingredients} instructions={recipe.instructions} />) })
 
         return (
             <div>
