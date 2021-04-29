@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import RecipeCard from './RecipeCard';
+import RecipeSingle from './RecipeSingle';
+import RecipeNew from './RecipeNew';
 
 import './Recipes.css';
 
@@ -24,7 +26,7 @@ class Recipes extends Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:3001/recipes")
+        fetch("http://localhost:3001/recipes/")
             .then(resp => resp.json())
             .then((data) => this.setState({ recipes: data }));
     };
@@ -44,6 +46,8 @@ class Recipes extends Component {
                 <div>
                     {recipesList}
                 </div>
+                <RecipeSingle />
+                <RecipeNew />
             </div >
         );
     }
