@@ -1,16 +1,14 @@
 import React from 'react';
 import Nav from "./Nav.js";
+import Navbar from "react-bootstrap/Navbar";
 
 const Header = () => {
     return (
-        <nav>
-            <header>
-                <h1>Logo</h1>
-            </header>
-            <div>
-                <Nav />
-            </div>
-        </nav>
+        <div>
+            <Navbar bg="dark" variant="dark">
+                <Navbar.Brand href="#home">Hinnuraisen Huikopalat</Navbar.Brand>
+            </Navbar>
+        </div >
     );
 };
 
