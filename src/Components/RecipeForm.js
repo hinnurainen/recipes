@@ -5,10 +5,11 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+
 const RecipeForm = () => {
     const [data, setData] = useState({
         snackname: "",
-        description: "",
+        image: "",
         ingredients: [],
         instructions: "",
     });
@@ -45,16 +46,6 @@ const RecipeForm = () => {
             <Form.Group>
                 <Form.Label htmlFor="">Name </Form.Label>
                 <Form.Control type="text" name="snackname" onChange={changeData} />
-            </Form.Group>
-            <Form.Group>
-                <Form.Label htmlFor="">Description</Form.Label>
-                <Form.Control
-                    as="textarea"
-                    rows={3}
-                    type="text"
-                    name="description"
-                    onChange={changeData}
-                />
             </Form.Group>
             <Form.Group>
                 <Form.Label htmlFor="">Image</Form.Label>
@@ -96,7 +87,7 @@ const RecipeForm = () => {
                 <Form.Control as="textarea" rows={3} name="instructions" onChange={changeData} />
             </Form.Group>
             <Button type="submit" variant="info" value="Send data">
-                Post recipe
+                Post this snack
         </Button>
         </Form>
     );

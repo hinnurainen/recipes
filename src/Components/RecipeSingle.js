@@ -25,7 +25,7 @@ const RecipeSingle = () => {
             <>
                 <div className="recipe">
                     <h1>{recipe.snackname}</h1>
-                    <img src={recipe.image} />
+                    <img src={recipe.image} alt={recipe.snackname} />
                     <p>{recipe.ingredients}</p>
                     <p>{recipe.instructions}</p>
                 </div>

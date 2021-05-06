@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import RecipesList from "../Components/RecipesList";
-import RecipeCard from "../Components/RecipeCard";
 import RecipeForm from '../Components/RecipeForm';
 import SearchBox from '../Components/SearchBox';
+import RecipeSingle from '../Components/RecipeSingle';
+import { Switch, Route } from "react-router-dom";
+
 
 const Recipes = () => {
     const [recipes, setRecipes] = useState([]);
@@ -23,13 +25,18 @@ const Recipes = () => {
         return recipe.snackname.toLocaleLowerCase().includes(searchInput.toLocaleLowerCase());
     });
 
-    const recipesList = recipeFilter.map((recipe) => { return (<RecipeCard snackname={recipe.snackname} key={recipe.id} image={recipe.image} ingredients={recipe.ingredients} instructions={recipe.instructions} />) })
-
     return (
         <div>
-            <SearchBox search={searchValueHandler} />
-            <RecipesList recipes={recipeFilter} />
-            <RecipeForm />
+            <Switch>
+                <Route path="/:id">
+                    <RecipeSingle />
+                </Route>
+                <Route path="/" exact>
+                    <SearchBox search={searchValueHandler} />
+                    <RecipesList recipes={recipeFilter} />
+                    <RecipeForm />
+                </Route>
+            </Switch>
         </div >
     );
 };

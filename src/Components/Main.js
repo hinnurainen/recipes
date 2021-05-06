@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 
 import Home from "../Pages/Home";
 import Recipes from "../Pages/Recipes";
-import About from "../Pages/About.js";
+import About from "../Pages/About";
 
 const Main = () => {
     return (
@@ -16,9 +16,9 @@ const Main = () => {
                 <Col></Col>
                 <Col xs={6}>
                     <Switch>
-                        <Route path="/Home" exact component={Home} />
-                        <Route path="/Recipes" component={Recipes} />
-                        <Route path="/About" component={About} />
+                        <Route path="/home" exact component={Home} />
+                        <Route path="/recipes" component={Recipes} />
+                        <Route path="/about" component={About} />
                     </Switch>
                 </Col>
                 <Col></Col>

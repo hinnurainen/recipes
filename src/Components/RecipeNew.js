@@ -1,6 +1,7 @@
 import React from "react";
 
-const NewRecipe = ({ change, submit }) => {
+
+const RecipeNew = ({ change, submit }) => {
     return (
         <form onSubmit={submit}>
             <label>Snackname </label>
@@ -20,4 +21,4 @@ const NewRecipe = ({ change, submit }) => {
     );
 };
 
-export default NewRecipe;
+export default RecipeNew;
