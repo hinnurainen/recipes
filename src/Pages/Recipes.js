@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import RecipesList from "../Components/RecipesList";
-import RecipeForm from '../Components/RecipeForm';
 import SearchBox from '../Components/SearchBox';
 import RecipeSingle from '../Components/RecipeSingle';
 import { Switch, Route } from "react-router-dom";
@@ -28,13 +27,12 @@ const Recipes = () => {
     return (
         <div>
             <Switch>
-                <Route path="/:id">
-                    <RecipeSingle />
-                </Route>
                 <Route path="/" exact>
                     <SearchBox search={searchValueHandler} />
                     <RecipesList recipes={recipeFilter} />
-                    <RecipeForm />
+                </Route>
+                <Route path="/:id">
+                    <RecipeSingle />
                 </Route>
             </Switch>
         </div >

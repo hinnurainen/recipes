@@ -8,11 +8,14 @@ const MainNav = () => {
             <LinkContainer to="/home">
                 <Nav.Link>Home</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/about">
-                <Nav.Link>About</Nav.Link>
-            </LinkContainer>
             <LinkContainer to="/recipes">
                 <Nav.Link>Recipes</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/addrecipe">
+                <Nav.Link>Add a recipe</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/about">
+                <Nav.Link>About</Nav.Link>
             </LinkContainer>
         </Nav>
     );

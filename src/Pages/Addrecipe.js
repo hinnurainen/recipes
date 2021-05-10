@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 
-const RecipeForm = () => {
+const AddRecipe = () => {
     const [data, setData] = useState({
         snackname: "",
         image: "",
@@ -93,4 +93,4 @@ const RecipeForm = () => {
     );
 };
 
-export default RecipeForm;
+export default AddRecipe;

@@ -7,7 +7,9 @@ import Col from "react-bootstrap/Col";
 
 import Home from "../Pages/Home";
 import Recipes from "../Pages/Recipes";
+import Addrecipe from '../Pages/Addrecipe';
 import About from "../Pages/About";
+
 
 const Main = () => {
     return (
@@ -18,6 +20,7 @@ const Main = () => {
                     <Switch>
                         <Route path="/home" exact component={Home} />
                         <Route path="/recipes" component={Recipes} />
+                        <Route path="/addrecipe" component={Addrecipe} />
                         <Route path="/about" component={About} />
                     </Switch>
                 </Col>
