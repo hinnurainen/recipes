@@ -12,11 +12,42 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--middlegrey);
+  background-color: var(--ivory);
   color: var(--darkest);
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.bg-dark {
+  background-color: var(--darkest) !important;
+}
+
+.logoheader {
+  font-family: "Caveat Brush", cursive;
+}
+
+.btn.btn-outline-info {
+  color: var(--darkest);
+  border-color: var(--darkest);
+}
+
+.btn.btn-outline-info:hover {
+  background-color: var(--lightgreen);
+  border-color: var(--darkest);
+  color: var(--darkest);
+}
+
+.btn.btn-info {
+  border-color: var(--darkest);
+  background-color: var(--darkest);
+  color: var(--ivory);
+}
+.btn.btn-info:hover {
+  border-color: var(--greengray);
+  background-color: var(--greengray);
+  color: var(--darkest);
 }

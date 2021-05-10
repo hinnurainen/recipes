@@ -14,3 +14,16 @@
   margin: 10px;
   padding: 10px;
 }
+
+.cardlink {
+  color: var(--greengray);
+  text-decoration: underline;
+}
+.cardlink:hover {
+  color: var(--darkest);
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: bold;
+}

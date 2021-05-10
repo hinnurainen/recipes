@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Hinnuraisen Huikopalat</Navbar.Brand>
+                <Navbar.Brand href="#home" className="logoheader">Hinnuraisen Huikopalat</Navbar.Brand>
                 <MainNav />
             </Navbar>
         </div >

@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <Container fluid="true">
             <Navbar bg="dark" variant="dark">
-                <p className="text-white">&copy; 2021 Heidi MÄÄ</p>
+                <p className="text-white">&copy; 2021 <img src="Koko lammaslogo (1).png" alt="sheeplogo" /></p>
             </Navbar>
         </Container>
     );

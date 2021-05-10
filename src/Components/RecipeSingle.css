@@ -1,0 +1,6 @@
+button {
+  margin: 10px;
+  background-color: var(--darkest);
+  color: var(--ivory);
+  border-radius: 10px;
+}
