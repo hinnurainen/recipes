@@ -3,7 +3,7 @@
     {
       "id": 1,
       "snackname": "Smoothie Bowl",
-      "image": "smoothiebowl.jpg",
+      "image": "./Assets/smoothiebowl.jpg",
       "ingredients": [
         "quark ",
         "bananas ",
@@ -37,6 +37,26 @@
         "very little water "
       ],
       "instructions": "Melt strawberries just a little bit and then mix everything together for a while with a sauvasekoitin."
+    },
+    {
+      "snackname": "Banana sorbet",
+      "image": "",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingName": "",
+          "quantity": "",
+          "undefined": "bananas"
+        },
+        {
+          "id": 2,
+          "ingName": "",
+          "quantity": "",
+          "undefined": "dark chocolate"
+        }
+      ],
+      "instructions": "Slice the bananas and put them into a freezer for a while and then take them to melt and survaa sauvasekoittimella. Decorate with chocolate.",
+      "id": 4
     }
   ]
 }

@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 const Footer = () => {
     return (
         <Container fluid="true">
-            <Navbar fixed="bottom" bg="dark" variant="dark">
+            <Navbar bg="dark" variant="dark">
                 <p className="text-white">&copy; 2021 Heidi MÄÄ</p>
             </Navbar>
         </Container>

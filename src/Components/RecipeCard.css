@@ -4,11 +4,12 @@
 }
 
 .card {
-  height: 500px;
-  width: 300px;
+  height: 300px;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--lightgreen);
   box-shadow: 5px 5px 10px var(--greengray);
+  margin: 10px;
 }

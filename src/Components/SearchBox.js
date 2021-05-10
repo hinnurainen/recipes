@@ -5,8 +5,8 @@ const SearchBox = ({ search }) => {
     return (
         <div>
             <Form>
-                <h4>Search for a snack:</h4>
-                <Form.Group><Form.Control type="text" name="name" onChange={search} placeholder="Getting hangry?" /> </Form.Group></Form>
+                <h4>Getting hangry?</h4>
+                <Form.Group><Form.Control type="text" name="name" onChange={search} placeholder="Search for a snack" /> </Form.Group></Form>
         </div>
     );
 };

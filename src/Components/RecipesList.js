@@ -1,6 +1,8 @@
 import React from 'react';
 import RecipeCard from './RecipeCard';
 
+import './RecipesList.css'
+
 
 const RecipesList = ({ recipes }) => {
 
