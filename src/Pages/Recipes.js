@@ -29,7 +29,6 @@ const Recipes = () => {
         <div>
             <Switch>
                 <Route path={`${url}/:id`}>
-                    <p>Recipe single goes here</p>
                     <RecipeSingle />
                 </Route>
                 <Route path={url} exact>
