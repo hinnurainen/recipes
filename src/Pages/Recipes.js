@@ -27,7 +27,7 @@ const Recipes = () => {
     return (
         <div>
             <Switch>
-                <Route path="/" exact>
+                <Route path="/recipes" exact>
                     <SearchBox search={searchValueHandler} />
                     <RecipesList recipes={recipeFilter} />
                 </Route>
