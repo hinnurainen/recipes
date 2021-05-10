@@ -33,6 +33,7 @@ code {
 .btn.btn-outline-info {
   color: var(--darkest);
   border-color: var(--darkest);
+  margin-bottom: 10px;
 }
 
 .btn.btn-outline-info:hover {
@@ -45,6 +46,7 @@ code {
   border-color: var(--darkest);
   background-color: var(--darkest);
   color: var(--ivory);
+  margin-bottom: 10px;
 }
 .btn.btn-info:hover {
   border-color: var(--greengray);

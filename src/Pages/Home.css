@@ -1,0 +1,61 @@
+#gallery {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "a a b b c c"
+    "a a d d c c"
+    "e h h h c c"
+    "f h h h i i"
+    "g h h h i i";
+  grid-gap: 0.5rem;
+  position: relative;
+}
+
+.grid-div {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.grid-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-div img:hover {
+  transform: scale(1.05);
+}
+
+.grid-item-1 {
+  grid-area: a;
+}
+.grid-item-2 {
+  grid-area: b;
+}
+.grid-item-3 {
+  grid-area: c;
+}
+.grid-item-4 {
+  grid-area: d;
+}
+.grid-item-5 {
+  grid-area: e;
+}
+.grid-item-6 {
+  grid-area: f;
+}
+.grid-item-7 {
+  grid-area: g;
+}
+.grid-item-8 {
+  grid-area: h;
+}
+.grid-item-9 {
+  grid-area: i;
+}

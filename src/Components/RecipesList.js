@@ -14,6 +14,7 @@ const RecipesList = ({ recipes }) => {
                 <RecipeCard
                     key={recipe.id}
                     snackname={recipe.snackname}
+                    image={recipe.image}
                     ingredients={recipe.ingredients}
                     instructions={recipe.instructions}
                     link={`${recipe.id}`}

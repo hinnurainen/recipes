@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import axios from "axios";
-
-import "./RecipeSingle.css";
+import Button from "react-bootstrap/Button";
 
 const RecipeSingle = () => {
     const [recipe, setRecipe] = useState();
@@ -31,7 +30,9 @@ const RecipeSingle = () => {
                     <p>{recipe.ingredients}</p>
                     <p>{recipe.instructions}</p>
                 </div>
-                <button onClick={() => history.goBack()}>Back to recipes</button>
+                <Button variant="outline-info" onClick={() => history.goBack()}>
+                    Back to recipes
+        </Button>
             </>
         );
     }
