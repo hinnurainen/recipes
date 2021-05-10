@@ -1,7 +1,10 @@
 import React from 'react';
 import RecipeCard from './RecipeCard';
 
+
 const RecipesList = ({ recipes }) => {
+
+
     return (
 
         <div className="posts">
@@ -12,7 +15,7 @@ const RecipesList = ({ recipes }) => {
                     snackname={recipe.snackname}
                     ingredients={recipe.ingredients}
                     instructions={recipe.instructions}
-                    link={recipe.id}
+                    link={`${recipe.id}`}
                 />
             ))}
         </div>

@@ -3,12 +3,13 @@ import axios from "axios";
 import RecipesList from "../Components/RecipesList";
 import SearchBox from '../Components/SearchBox';
 import RecipeSingle from '../Components/RecipeSingle';
-import { Switch, Route } from "react-router-dom";
-
+import { Switch, Route, useRouteMatch } from "react-router-dom";
 
 const Recipes = () => {
     const [recipes, setRecipes] = useState([]);
     const [searchInput, setSearchInput] = useState("");
+
+    let { url } = useRouteMatch();
 
     useEffect(() => {
         axios
@@ -27,12 +28,13 @@ const Recipes = () => {
     return (
         <div>
             <Switch>
-                <Route path="/recipes" exact>
+                <Route path={`${url}/:id`}>
+                    <p>Recipe single goes here</p>
+                    <RecipeSingle />
+                </Route>
+                <Route path={url} exact>
                     <SearchBox search={searchValueHandler} />
                     <RecipesList recipes={recipeFilter} />
-                </Route>
-                <Route path="/:id">
-                    <RecipeSingle />
                 </Route>
             </Switch>
         </div >

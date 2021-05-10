@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 
 import Home from "../Pages/Home";
 import Recipes from "../Pages/Recipes";
-import Addrecipe from '../Pages/Addrecipe';
+import Addrecipe from '../Pages/AddRecipe';
 import About from "../Pages/About";
 
 
