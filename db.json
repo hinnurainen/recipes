@@ -3,7 +3,7 @@
     {
       "id": 1,
       "snackname": "Smoothie Bowl",
-      "image": "./Assets/smoothiebowl.jpg",
+      "image": "smoothiebowl.jpg",
       "ingredients": [
         "quark ",
         "bananas ",

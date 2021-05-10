@@ -12,4 +12,5 @@
   background-color: var(--lightgreen);
   box-shadow: 5px 5px 10px var(--greengray);
   margin: 10px;
+  padding: 10px;
 }
