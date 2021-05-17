@@ -6,7 +6,7 @@ const SearchBox = ({ search }) => {
         <div>
             <Form>
                 <h4 className="text-center p-2">Getting hangry?</h4>
-                <Form.Group className="justify-content-center" ><Form.Control type="text" name="name" onChange={search} placeholder="Search for a snack" /> </Form.Group></Form>
+                <Form.Group className="justify-content-center" ><Form.Control className="searchbox" type="text" name="name" onChange={search} placeholder="Search for a snack" /> </Form.Group></Form>
         </div>
     );
 };

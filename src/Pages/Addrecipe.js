@@ -14,7 +14,7 @@ const AddRecipe = () => {
     });
 
     const [ings, setIngs] = useState([
-        { id: 1, ingName: "", quantity: "" },
+        { id: 1, ingName: "" },
     ]);
 
     const changeData = (e) => {
@@ -22,16 +22,16 @@ const AddRecipe = () => {
     };
 
     const changeIngData = (e, i) => {
-        const { snackname, value } = e.target;
+        const { name, value } = e.target;
         const list = [...ings];
-        list[i][snackname] = value;
+        list[i][name] = value;
         setIngs(list);
         setData({ ...data, ingredients: ings });
     };
 
     const addMore = (e, i) => {
         e.preventDefault();
-        const newIng = { id: ings.length + 1, ingName: "", quantity: "" };
+        const newIng = { id: ings.length + 1, ingName: "" };
         setIngs([...ings, newIng]);
     };
 
@@ -56,14 +56,6 @@ const AddRecipe = () => {
                     <div key={i}>
                         <Form.Group>
                             <Row>
-                                {/*<Col>
-                                    <Form.Label htmlFor="">Quantity</Form.Label>
-                                    <Form.Control
-                                        type="text"
-                                        name="quantity"
-                                        onChange={(e) => changeIngData(e, i)}
-                                    />
-                                </Col>*/}
                                 <Col>
                                     <Form.Label htmlFor="">Quantity and ingredient one by one</Form.Label>
                                     <Form.Control

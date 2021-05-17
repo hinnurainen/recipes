@@ -39,118 +39,60 @@
       "instructions": "Melt strawberries just a little bit and then mix everything together for a while with a sauvasekoitin."
     },
     {
-      "snackname": "Banana Sorbet",
-      "image": "bananasorbet.jpg",
-      "ingredients": [
-        {
-          "id": 1,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "bananas"
-        },
-        {
-          "id": 2,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "dark chocolate"
-        }
-      ],
-      "instructions": "Slice the bananas and put them into a freezer for a while and then take them to melt and survaa sauvasekoittimella. Decorate with chocolate.",
-      "id": 4
-    },
-    {
       "snackname": "Siemennäkkäri",
       "image": "siemennäkkäri.jpg",
       "ingredients": [
         {
           "id": 1,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "munaa"
+          "ingName": "3 kananmunaa"
         },
         {
           "id": 2,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "kuorittuja seesaminsiemeniä"
+          "ingName": "1dl kuorittuja seesaminsiemeniä"
         },
         {
           "id": 3,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "auringonkukansiemeniä"
+          "ingName": "90g auringonkukansiemeniä"
         },
         {
           "id": 4,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "pellavansiemeniä"
+          "ingName": "1/2dl pellavansiemeniä"
         },
         {
           "id": 5,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "kaurahiutaleita"
+          "ingName": "1dl kaurahiutaleita"
         },
         {
           "id": 6,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "suolaa"
+          "ingName": "ripaus suolaa"
         },
         {
           "id": 7,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "perunajauhoja"
+          "ingName": "2rkl perunajauhoja"
         }
       ],
-      "instructions": "Mittaa ainekset kulhoon ja sekoita puuharukalla. Levitä leivinpaperilla vuoratulle uunipellille mahdollisimman ohueksi levyksi. Paista 175-asteessa n. 25min. Leikkaa heti uunista ottamisen jälkeen paloiksi ja jäähdytä ritilän päällä.",
-      "id": 5
+      "instructions": "Mittaa kaikki ainekset kulhoon ja sekoita pehmeäksi taikinaksi. Levitä taikina leivinpaperilla vuoratulle pellille mahdollisimman ohueksi levyksi. Paista levyä 175-asteisessa uunissa noin 25 minuuttia. Leikkaa levy heti uunista ottamisen jälkeen paloiksi ja jäähdytä ritilän päällä.",
+      "id": 4
     },
     {
-      "snackname": "Hernehummus",
-      "image": "hernehummus.png",
+      "snackname": "Banana sorbet",
+      "image": "bananasorbet.jpg",
       "ingredients": [
         {
           "id": 1,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "1 pussi pakasteherneitä"
+          "ingName": "300g pakastettua banaania viipaleina"
         },
         {
           "id": 2,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "1/2 ruukku minttua"
+          "ingName": "0,5dl mantelijuomaa"
         },
         {
           "id": 3,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "1 valkosipulinkynsi"
-        },
-        {
-          "id": 4,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "puolikkaan sitruunan mehu"
-        },
-        {
-          "id": 5,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "2rkl oliiviöljyä"
-        },
-        {
-          "id": 6,
-          "ingName": "",
-          "quantity": "",
-          "undefined": "suolaa ja pippuria"
+          "ingName": "ripaus vaniljajauhetta"
         }
       ],
-      "instructions": "Sulata herneet ja laita kulhoon. Lisää muut raaka-aineet ja survaa sauvasekoittimella karkeaksi tahnaksi. Paranee tekeytyessään jääkaapissa. Nauti esimerkiksi paahdetun ruisleivän päällä.",
-      "id": 6
+      "instructions": "Anna banaanien sulaa 5-10 minuuttia. Soseuta jäätelöksi sauvasekoittimella. Koristele halutessasi vaikka mantelirouheella ja mustikoilla.",
+      "id": 5
     }
   ]
 }

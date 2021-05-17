@@ -53,3 +53,16 @@ code {
   background-color: var(--greengray);
   color: var(--darkest);
 }
+
+.searchbox {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-control:focus {
+  color: var(--darkest);
+  background-color: #fff;
+  border-color: var(--greengray);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--greengray);
+}
