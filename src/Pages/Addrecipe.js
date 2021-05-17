@@ -56,16 +56,16 @@ const AddRecipe = () => {
                     <div key={i}>
                         <Form.Group>
                             <Row>
-                                <Col>
+                                {/*<Col>
                                     <Form.Label htmlFor="">Quantity</Form.Label>
                                     <Form.Control
                                         type="text"
                                         name="quantity"
                                         onChange={(e) => changeIngData(e, i)}
                                     />
-                                </Col>
+                                </Col>*/}
                                 <Col>
-                                    <Form.Label htmlFor="">Ingredient</Form.Label>
+                                    <Form.Label htmlFor="">Quantity and ingredient one by one</Form.Label>
                                     <Form.Control
                                         type="text"
                                         name="ingName"

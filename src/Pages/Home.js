@@ -4,7 +4,7 @@ import './Home.css';
 const Home = () => {
     return (
         <div>
-            <h1>Welcome to the best snack app ever!</h1>
+            <h1>Welcome to Hinnuraisen Huikopalat</h1>
             <section id="gallery"><div className="container">
                 <div className="gallery-grid">
                     <div className="grid-item-1 grid-div">

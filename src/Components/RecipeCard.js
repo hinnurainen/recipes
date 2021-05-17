@@ -17,7 +17,7 @@ const RecipeCard = ({ snackname, link, image, instructions }) => {
                 <img src={`../Assets/${image}`} alt={snackname} width="100" height="200" />
 
                 <p>{truncate(instructions, 30)} ...</p>
-                <Link to={`${url}/${link}`} className="cardlink">Read more</Link>
+                <Link to={`${url}/${link}`} className="cardlink">See ingredients</Link>
             </div>
         </div>
     );

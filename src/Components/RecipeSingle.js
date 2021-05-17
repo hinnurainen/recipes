@@ -19,7 +19,7 @@ const RecipeSingle = () => {
     let recipeData = undefined;
 
     if (!recipe) {
-        recipeData = <h1>Loading recipes...</h1>
+        recipeData = <h1>Loading recipe...</h1>
     }
     if (recipe) {
         recipeData = (
