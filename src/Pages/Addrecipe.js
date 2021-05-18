@@ -36,7 +36,8 @@ const AddRecipe = () => {
     };
 
     const submitData = (e) => {
-        axios.post("http://localhost:3001/recipes", data);
+        e.preventDefault();
+        axios.post("https://secure-springs-28413.herokuapp.com/recipe/add", data);
     };
 
 

@@ -13,7 +13,7 @@ const Recipes = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:3001/recipes")
+            .get("https://secure-springs-28413.herokuapp.com/recipe/all")
             .then((res => setRecipes(res.data)));
     }, []);
 

@@ -10,7 +10,7 @@ const RecipeSingle = () => {
 
     useEffect(() => {
         if (!recipe) {
-            axios.get('http://localhost:3001/recipes/' + id)
+            axios.get('https://secure-springs-28413.herokuapp.com/recipe/all' + id)
                 .then((res) => setRecipe(res.data));
         }
     });
