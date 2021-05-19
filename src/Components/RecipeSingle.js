@@ -30,7 +30,7 @@ const RecipeSingle = () => {
             <>
                 <div className="recipe">
                     <h1>{recipe.snackname}</h1>
-                    <img src={recipe.image} alt={recipe.snackname} width="600" height="500" />
+                    <img src={`../Assets/${recipe.image}`} alt={recipe.snackname} width="500" height="600" />
                     {ingredientList}
                     <p>{recipe.instructions}</p>
                 </div>
