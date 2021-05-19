@@ -10,7 +10,7 @@ const RecipeSingle = () => {
 
     useEffect(() => {
         if (!recipe) {
-            axios.get('https://secure-springs-28413.herokuapp.com/recipe/all' + id)
+            axios.get('https://secure-springs-28413.herokuapp.com/recipe/find/' + id)
                 .then((res) => setRecipe(res.data));
         }
     });
@@ -22,12 +22,16 @@ const RecipeSingle = () => {
         recipeData = <h1>Loading recipe...</h1>
     }
     if (recipe) {
+        let ingredientList = recipe.ingredients.map((ingredient) => {
+            return <p>{ingredient.ingName}</p>
+        })
+
         recipeData = (
             <>
                 <div className="recipe">
                     <h1>{recipe.snackname}</h1>
                     <img src={recipe.image} alt={recipe.snackname} width="600" height="500" />
-                    <p>{recipe.ingredients}</p>
+                    {ingredientList}
                     <p>{recipe.instructions}</p>
                 </div>
                 <Button variant="outline-info" onClick={() => history.goBack()}>

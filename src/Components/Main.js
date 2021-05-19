@@ -18,7 +18,7 @@ const Main = () => {
                 <Col></Col>
                 <Col xs={6}>
                     <Switch>
-                        <Route path="/home" exact component={Home} />
+                        <Route path="/" exact component={Home} />
                         <Route path="/recipes" component={Recipes} />
                         <Route path="/addrecipe" component={Addrecipe} />
                         <Route path="/about" component={About} />
