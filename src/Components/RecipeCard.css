@@ -35,7 +35,6 @@ h3 {
 }
 
 /**************** Tablet support ****************/
-
 @media (max-width: 899px) {
   .list {
     display: flex;
@@ -47,10 +46,6 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--lightgreen);
-    box-shadow: 5px 5px 10px var(--greengray);
-    margin: 10px;
-    padding: 10px;
   }
   .cardimg {
     max-width: 100%;
@@ -69,10 +64,6 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--lightgreen);
-    box-shadow: 5px 5px 10px var(--greengray);
-    margin: 10px;
-    padding: 10px;
   }
   .cardimg {
     max-width: 100%;

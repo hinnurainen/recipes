@@ -76,3 +76,8 @@ code {
 .navbar-expand {
   flex-wrap: wrap;
 }
+
+.recipe img {
+  max-width: 100%;
+  height: auto;
+}
