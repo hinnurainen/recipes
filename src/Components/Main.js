@@ -13,18 +13,18 @@ import About from "../Pages/About";
 
 const Main = () => {
     return (
-        <Container>
+        <Container className="maincontainer">
             <Row className="mt-5">
-                <Col></Col>
-                <Col xs={6}>
-                    <Switch>
-                        <Route path="/" exact component={Home} />
-                        <Route path="/recipes" component={Recipes} />
-                        <Route path="/addrecipe" component={Addrecipe} />
-                        <Route path="/about" component={About} />
-                    </Switch>
-                </Col>
-                <Col></Col>
+
+                {/* <Col xs={6}> */}
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/recipes" component={Recipes} />
+                    <Route path="/addrecipe" component={Addrecipe} />
+                    <Route path="/about" component={About} />
+                </Switch>
+                {/* </Col> */}
+
             </Row>
         </Container>
     );

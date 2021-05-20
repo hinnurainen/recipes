@@ -51,7 +51,7 @@ code {
 .btn.btn-info:hover {
   border-color: var(--greengray);
   background-color: var(--greengray);
-  color: var(--darkest);
+  color: var(--ivory);
 }
 
 .searchbox {
@@ -65,4 +65,12 @@ code {
   border-color: var(--greengray);
   outline: 0;
   box-shadow: 0 0 0 0.2rem var(--greengray);
+}
+
+.maincontainer {
+  padding-bottom: 150px;
+}
+
+.navbar-expand {
+  flex-wrap: wrap;
 }
